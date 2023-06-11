@@ -25,18 +25,17 @@ final class AssetRepository: AssetRepositoryType {
     
     func asset() -> Observable<Asset> {
         let remoteAssetStream = assetNetworkService.asset()
-            .asObservable()
             .map { Asset(symbol: $0.symbol, last: $0.last, capitalization: $0.marketCap, info: $0.info) }
             .do { [assetStorage] asset in
                 assetStorage.save(asset)
             }
+            .asObservable()
         
         let localAssetStream = assetStorage.asset()
-            .asObservable()
             .compactMap { $0 }
+            .asObservable()
         
-        return localAssetStream
-            .concat(remoteAssetStream)
+        return .concat(localAssetStream, remoteAssetStream)
     }
     
     func save(_ asset: Asset?) {
