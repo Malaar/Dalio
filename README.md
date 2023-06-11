@@ -1,6 +1,5 @@
 # Dalio
-Custom keyboard with speech recognition.
-This is iOS test application to demonstrate work with data fetching & caching, architecture.
+This is iOS test application to demonstrate work with data fetching & caching, architecture and a bit of unit testing.
 
 
 ## Getting Started
