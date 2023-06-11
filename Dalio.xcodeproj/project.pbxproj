@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027A8ADA2A35DEF900955FE5 /* AssetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027A8AD92A35DEF900955FE5 /* AssetViewController.storyboard */; };
+		027A8ADC2A35E1E600955FE5 /* AssetViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A8ADB2A35E1E600955FE5 /* AssetViewModelInterface.swift */; };
+		027A8ADF2A35EE2200955FE5 /* StreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A8ADE2A35EE2200955FE5 /* StreamHandler.swift */; };
+		027A8AE22A35FBB400955FE5 /* KMBFormatter in Frameworks */ = {isa = PBXBuildFile; productRef = 027A8AE12A35FBB400955FE5 /* KMBFormatter */; };
+		02C5C6D32A34DE0800C6D613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5C6D22A34DE0800C6D613 /* AppDelegate.swift */; };
+		02C5C6D52A34DE0800C6D613 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5C6D42A34DE0800C6D613 /* SceneDelegate.swift */; };
+		02C5C6D72A34DE0800C6D613 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5C6D62A34DE0800C6D613 /* AssetViewController.swift */; };
+		02C5C6DC2A34DE0A00C6D613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C5C6DB2A34DE0A00C6D613 /* Assets.xcassets */; };
+		02C5C6DF2A34DE0A00C6D613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C5C6DD2A34DE0A00C6D613 /* LaunchScreen.storyboard */; };
+		02C5C6EA2A34DE0A00C6D613 /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5C6E92A34DE0A00C6D613 /* AssetTests.swift */; };
+		02C5C6F42A34DE0A00C6D613 /* AssetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5C6F32A34DE0A00C6D613 /* AssetUITests.swift */; };
+		02C5C6F62A34DE0A00C6D613 /* AssetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5C6F52A34DE0A00C6D613 /* AssetUITestsLaunchTests.swift */; };
+		02C5C70A2A34E8F700C6D613 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 02C5C7092A34E8F700C6D613 /* Reusable */; };
+		02C5C70C2A34E90900C6D613 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5C70B2A34E90900C6D613 /* AssetView.swift */; };
+		02C5C70E2A34E91300C6D613 /* AssetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C5C70D2A34E91300C6D613 /* AssetView.xib */; };
+		02DAB7C12A35C51E00C9FC42 /* AssetNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7C02A35C51E00C9FC42 /* AssetNetworkService.swift */; };
+		02DAB7C42A35C6A400C9FC42 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 02DAB7C32A35C6A400C9FC42 /* RxAlamofire */; };
+		02DAB7C72A35CBC500C9FC42 /* AssetNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7C62A35CBC500C9FC42 /* AssetNetwork.swift */; };
+		02DAB7CA2A35D0E300C9FC42 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7C92A35D0E300C9FC42 /* NetworkManager.swift */; };
+		02DAB7CC2A35D14300C9FC42 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7CB2A35D14300C9FC42 /* NetworkError.swift */; };
+		02DAB7D12A35D63100C9FC42 /* AssetStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7D02A35D63100C9FC42 /* AssetStorage.swift */; };
+		02DAB7D32A35D6F200C9FC42 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7D22A35D6F200C9FC42 /* Asset.swift */; };
+		02DAB7D82A35D9BB00C9FC42 /* AssetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7D72A35D9BB00C9FC42 /* AssetRepository.swift */; };
+		02DAB7DA2A35DE8600C9FC42 /* AssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7D92A35DE8600C9FC42 /* AssetViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02C5C6E62A34DE0A00C6D613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C5C6C72A34DE0700C6D613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C5C6CE2A34DE0700C6D613;
+			remoteInfo = Asset;
+		};
+		02C5C6F02A34DE0A00C6D613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C5C6C72A34DE0700C6D613 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C5C6CE2A34DE0700C6D613;
+			remoteInfo = Asset;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027A8AD92A35DEF900955FE5 /* AssetViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AssetViewController.storyboard; sourceTree = "<group>"; };
+		027A8ADB2A35E1E600955FE5 /* AssetViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModelInterface.swift; sourceTree = "<group>"; };
+		027A8ADE2A35EE2200955FE5 /* StreamHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamHandler.swift; sourceTree = "<group>"; };
+		02C5C6CF2A34DE0800C6D613 /* Dalio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dalio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C5C6D22A34DE0800C6D613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02C5C6D42A34DE0800C6D613 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		02C5C6D62A34DE0800C6D613 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		02C5C6DB2A34DE0A00C6D613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02C5C6DE2A34DE0A00C6D613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02C5C6E02A34DE0A00C6D613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C5C6E52A34DE0A00C6D613 /* DalioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DalioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C5C6E92A34DE0A00C6D613 /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
+		02C5C6EF2A34DE0A00C6D613 /* DalioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DalioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C5C6F32A34DE0A00C6D613 /* AssetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUITests.swift; sourceTree = "<group>"; };
+		02C5C6F52A34DE0A00C6D613 /* AssetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02C5C70B2A34E90900C6D613 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		02C5C70D2A34E91300C6D613 /* AssetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetView.xib; sourceTree = "<group>"; };
+		02DAB7C02A35C51E00C9FC42 /* AssetNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetNetworkService.swift; sourceTree = "<group>"; };
+		02DAB7C62A35CBC500C9FC42 /* AssetNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetNetwork.swift; sourceTree = "<group>"; };
+		02DAB7C92A35D0E300C9FC42 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		02DAB7CB2A35D14300C9FC42 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		02DAB7D02A35D63100C9FC42 /* AssetStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetStorage.swift; sourceTree = "<group>"; };
+		02DAB7D22A35D6F200C9FC42 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		02DAB7D72A35D9BB00C9FC42 /* AssetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRepository.swift; sourceTree = "<group>"; };
+		02DAB7D92A35DE8600C9FC42 /* AssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02C5C6CC2A34DE0700C6D613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C5C70A2A34E8F700C6D613 /* Reusable in Frameworks */,
+				02DAB7C42A35C6A400C9FC42 /* RxAlamofire in Frameworks */,
+				027A8AE22A35FBB400955FE5 /* KMBFormatter in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C5C6E22A34DE0A00C6D613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C5C6EC2A34DE0A00C6D613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027A8ADD2A35EDEB00955FE5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				027A8ADE2A35EE2200955FE5 /* StreamHandler.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		02C5C6C62A34DE0700C6D613 = {
+			isa = PBXGroup;
+			children = (
+				02C5C6D12A34DE0800C6D613 /* Dalio */,
+				02C5C6E82A34DE0A00C6D613 /* DalioTests */,
+				02C5C6F22A34DE0A00C6D613 /* DalioUITests */,
+				02C5C6D02A34DE0800C6D613 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02C5C6D02A34DE0800C6D613 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C6CF2A34DE0800C6D613 /* Dalio.app */,
+				02C5C6E52A34DE0A00C6D613 /* DalioTests.xctest */,
+				02C5C6EF2A34DE0A00C6D613 /* DalioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02C5C6D12A34DE0800C6D613 /* Dalio */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C7022A34E41B00C6D613 /* Resources */,
+				02C5C7032A34E46300C6D613 /* Sources */,
+				02C5C6E02A34DE0A00C6D613 /* Info.plist */,
+			);
+			path = Dalio;
+			sourceTree = "<group>";
+		};
+		02C5C6E82A34DE0A00C6D613 /* DalioTests */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C6E92A34DE0A00C6D613 /* AssetTests.swift */,
+			);
+			path = DalioTests;
+			sourceTree = "<group>";
+		};
+		02C5C6F22A34DE0A00C6D613 /* DalioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C6F32A34DE0A00C6D613 /* AssetUITests.swift */,
+				02C5C6F52A34DE0A00C6D613 /* AssetUITestsLaunchTests.swift */,
+			);
+			path = DalioUITests;
+			sourceTree = "<group>";
+		};
+		02C5C7022A34E41B00C6D613 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C6DB2A34DE0A00C6D613 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02C5C7032A34E46300C6D613 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C7062A34E50700C6D613 /* Base */,
+				027A8ADD2A35EDEB00955FE5 /* Core */,
+				02DAB7BF2A35C4E700C9FC42 /* Network */,
+				02DAB7CE2A35D5F900C9FC42 /* Storage */,
+				02DAB7CF2A35D60A00C9FC42 /* Domain */,
+				02C5C7042A34E47F00C6D613 /* Screens */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		02C5C7042A34E47F00C6D613 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C7052A34E4DF00C6D613 /* Asset */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		02C5C7052A34E4DF00C6D613 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C7072A34E85600C6D613 /* Views */,
+				027A8AD92A35DEF900955FE5 /* AssetViewController.storyboard */,
+				02C5C6D62A34DE0800C6D613 /* AssetViewController.swift */,
+				02DAB7D92A35DE8600C9FC42 /* AssetViewModel.swift */,
+				027A8ADB2A35E1E600955FE5 /* AssetViewModelInterface.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		02C5C7062A34E50700C6D613 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C6D22A34DE0800C6D613 /* AppDelegate.swift */,
+				02C5C6D42A34DE0800C6D613 /* SceneDelegate.swift */,
+				02C5C6DD2A34DE0A00C6D613 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		02C5C7072A34E85600C6D613 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02C5C70B2A34E90900C6D613 /* AssetView.swift */,
+				02C5C70D2A34E91300C6D613 /* AssetView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02DAB7BF2A35C4E700C9FC42 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7C82A35D0D900C9FC42 /* Base */,
+				02DAB7C52A35CBB800C9FC42 /* Models */,
+				02DAB7CD2A35D2AC00C9FC42 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02DAB7C52A35CBB800C9FC42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7C62A35CBC500C9FC42 /* AssetNetwork.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02DAB7C82A35D0D900C9FC42 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7CB2A35D14300C9FC42 /* NetworkError.swift */,
+				02DAB7C92A35D0E300C9FC42 /* NetworkManager.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		02DAB7CD2A35D2AC00C9FC42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7C02A35C51E00C9FC42 /* AssetNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		02DAB7CE2A35D5F900C9FC42 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7D02A35D63100C9FC42 /* AssetStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		02DAB7CF2A35D60A00C9FC42 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7D42A35D97D00C9FC42 /* Models */,
+				02DAB7D52A35D98400C9FC42 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		02DAB7D42A35D97D00C9FC42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7D22A35D6F200C9FC42 /* Asset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02DAB7D52A35D98400C9FC42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7D72A35D9BB00C9FC42 /* AssetRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02C5C6CE2A34DE0700C6D613 /* Dalio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C5C6F92A34DE0A00C6D613 /* Build configuration list for PBXNativeTarget "Dalio" */;
+			buildPhases = (
+				02C5C6CB2A34DE0700C6D613 /* Sources */,
+				02C5C6CC2A34DE0700C6D613 /* Frameworks */,
+				02C5C6CD2A34DE0700C6D613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dalio;
+			packageProductDependencies = (
+				02C5C7092A34E8F700C6D613 /* Reusable */,
+				02DAB7C32A35C6A400C9FC42 /* RxAlamofire */,
+				027A8AE12A35FBB400955FE5 /* KMBFormatter */,
+			);
+			productName = Asset;
+			productReference = 02C5C6CF2A34DE0800C6D613 /* Dalio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02C5C6E42A34DE0A00C6D613 /* DalioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C5C6FC2A34DE0A00C6D613 /* Build configuration list for PBXNativeTarget "DalioTests" */;
+			buildPhases = (
+				02C5C6E12A34DE0A00C6D613 /* Sources */,
+				02C5C6E22A34DE0A00C6D613 /* Frameworks */,
+				02C5C6E32A34DE0A00C6D613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02C5C6E72A34DE0A00C6D613 /* PBXTargetDependency */,
+			);
+			name = DalioTests;
+			productName = AssetTests;
+			productReference = 02C5C6E52A34DE0A00C6D613 /* DalioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02C5C6EE2A34DE0A00C6D613 /* DalioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C5C6FF2A34DE0A00C6D613 /* Build configuration list for PBXNativeTarget "DalioUITests" */;
+			buildPhases = (
+				02C5C6EB2A34DE0A00C6D613 /* Sources */,
+				02C5C6EC2A34DE0A00C6D613 /* Frameworks */,
+				02C5C6ED2A34DE0A00C6D613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02C5C6F12A34DE0A00C6D613 /* PBXTargetDependency */,
+			);
+			name = DalioUITests;
+			productName = AssetUITests;
+			productReference = 02C5C6EF2A34DE0A00C6D613 /* DalioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02C5C6C72A34DE0700C6D613 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					02C5C6CE2A34DE0700C6D613 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					02C5C6E42A34DE0A00C6D613 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02C5C6CE2A34DE0700C6D613;
+					};
+					02C5C6EE2A34DE0A00C6D613 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02C5C6CE2A34DE0700C6D613;
+					};
+				};
+			};
+			buildConfigurationList = 02C5C6CA2A34DE0700C6D613 /* Build configuration list for PBXProject "Dalio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02C5C6C62A34DE0700C6D613;
+			packageReferences = (
+				02C5C7082A34E8F700C6D613 /* XCRemoteSwiftPackageReference "Reusable" */,
+				02DAB7C22A35C6A400C9FC42 /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				027A8AE02A35FBB400955FE5 /* XCRemoteSwiftPackageReference "KMBFormatter" */,
+			);
+			productRefGroup = 02C5C6D02A34DE0800C6D613 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02C5C6CE2A34DE0700C6D613 /* Dalio */,
+				02C5C6E42A34DE0A00C6D613 /* DalioTests */,
+				02C5C6EE2A34DE0A00C6D613 /* DalioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02C5C6CD2A34DE0700C6D613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027A8ADA2A35DEF900955FE5 /* AssetViewController.storyboard in Resources */,
+				02C5C6DF2A34DE0A00C6D613 /* LaunchScreen.storyboard in Resources */,
+				02C5C70E2A34E91300C6D613 /* AssetView.xib in Resources */,
+				02C5C6DC2A34DE0A00C6D613 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C5C6E32A34DE0A00C6D613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C5C6ED2A34DE0A00C6D613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02C5C6CB2A34DE0700C6D613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DAB7C72A35CBC500C9FC42 /* AssetNetwork.swift in Sources */,
+				02DAB7CC2A35D14300C9FC42 /* NetworkError.swift in Sources */,
+				027A8ADF2A35EE2200955FE5 /* StreamHandler.swift in Sources */,
+				02DAB7D32A35D6F200C9FC42 /* Asset.swift in Sources */,
+				02DAB7DA2A35DE8600C9FC42 /* AssetViewModel.swift in Sources */,
+				02DAB7C12A35C51E00C9FC42 /* AssetNetworkService.swift in Sources */,
+				02DAB7D82A35D9BB00C9FC42 /* AssetRepository.swift in Sources */,
+				027A8ADC2A35E1E600955FE5 /* AssetViewModelInterface.swift in Sources */,
+				02C5C6D72A34DE0800C6D613 /* AssetViewController.swift in Sources */,
+				02DAB7CA2A35D0E300C9FC42 /* NetworkManager.swift in Sources */,
+				02DAB7D12A35D63100C9FC42 /* AssetStorage.swift in Sources */,
+				02C5C70C2A34E90900C6D613 /* AssetView.swift in Sources */,
+				02C5C6D32A34DE0800C6D613 /* AppDelegate.swift in Sources */,
+				02C5C6D52A34DE0800C6D613 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C5C6E12A34DE0A00C6D613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C5C6EA2A34DE0A00C6D613 /* AssetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C5C6EB2A34DE0A00C6D613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C5C6F42A34DE0A00C6D613 /* AssetUITests.swift in Sources */,
+				02C5C6F62A34DE0A00C6D613 /* AssetUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02C5C6E72A34DE0A00C6D613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C5C6CE2A34DE0700C6D613 /* Dalio */;
+			targetProxy = 02C5C6E62A34DE0A00C6D613 /* PBXContainerItemProxy */;
+		};
+		02C5C6F12A34DE0A00C6D613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C5C6CE2A34DE0700C6D613 /* Dalio */;
+			targetProxy = 02C5C6F02A34DE0A00C6D613 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02C5C6DD2A34DE0A00C6D613 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02C5C6DE2A34DE0A00C6D613 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02C5C6F72A34DE0A00C6D613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02C5C6F82A34DE0A00C6D613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02C5C6FA2A34DE0A00C6D613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dalio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Asset;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = AssetViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.Asset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		02C5C6FB2A34DE0A00C6D613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dalio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Asset;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = AssetViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.Asset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		02C5C6FD2A34DE0A00C6D613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.AssetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dalio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dalio";
+			};
+			name = Debug;
+		};
+		02C5C6FE2A34DE0A00C6D613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.AssetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dalio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dalio";
+			};
+			name = Release;
+		};
+		02C5C7002A34DE0A00C6D613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.AssetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Asset;
+			};
+			name = Debug;
+		};
+		02C5C7012A34DE0A00C6D613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.AssetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Asset;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02C5C6CA2A34DE0700C6D613 /* Build configuration list for PBXProject "Dalio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C5C6F72A34DE0A00C6D613 /* Debug */,
+				02C5C6F82A34DE0A00C6D613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C5C6F92A34DE0A00C6D613 /* Build configuration list for PBXNativeTarget "Dalio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C5C6FA2A34DE0A00C6D613 /* Debug */,
+				02C5C6FB2A34DE0A00C6D613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C5C6FC2A34DE0A00C6D613 /* Build configuration list for PBXNativeTarget "DalioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C5C6FD2A34DE0A00C6D613 /* Debug */,
+				02C5C6FE2A34DE0A00C6D613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C5C6FF2A34DE0A00C6D613 /* Build configuration list for PBXNativeTarget "DalioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C5C7002A34DE0A00C6D613 /* Debug */,
+				02C5C7012A34DE0A00C6D613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		027A8AE02A35FBB400955FE5 /* XCRemoteSwiftPackageReference "KMBFormatter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/a-sarris/KMBFormatter";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		02C5C7082A34E8F700C6D613 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		02DAB7C22A35C6A400C9FC42 /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		027A8AE12A35FBB400955FE5 /* KMBFormatter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 027A8AE02A35FBB400955FE5 /* XCRemoteSwiftPackageReference "KMBFormatter" */;
+			productName = KMBFormatter;
+		};
+		02C5C7092A34E8F700C6D613 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C5C7082A34E8F700C6D613 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+		02DAB7C32A35C6A400C9FC42 /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02DAB7C22A35C6A400C9FC42 /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 02C5C6C72A34DE0700C6D613 /* Project object */;
+}
