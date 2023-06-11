@@ -9,7 +9,7 @@ import Foundation
 
 struct Asset: Codable {
     let symbol: String
-    let close: Float
+    let last: Float
     let capitalization: Double
     let info: String
 }

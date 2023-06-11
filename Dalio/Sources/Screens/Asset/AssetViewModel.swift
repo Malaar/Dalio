@@ -80,7 +80,7 @@ private extension AssetViewModel {
         AssetViewState(
             name: asset.symbol,
             capitalization: Self.capitalization(from: asset.capitalization),
-            price: Self.price(from: asset.close),
+            price: Self.price(from: asset.last),
             marketStatus: asset.info)
     }
     

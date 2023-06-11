@@ -12,7 +12,7 @@ enum Network {}
 extension Network {
     struct Asset: Decodable {
         let symbol: String
-        let close: Float
+        let last: Float
         let marketCap: Double
         let info: String
     }
